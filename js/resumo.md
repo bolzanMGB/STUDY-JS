@@ -7,7 +7,7 @@ let age 21;
 let message = age >= 18 ? "adult" : "minor"
 ```
 
-1. Switches:
+2. Switches:
 
 ```jsx
 let day =1;
@@ -27,14 +27,14 @@ switch(day){
 }
 ```
 
-1. Method Chaining
+3. Method Chaining
 
 ```jsx
 let username = othavio
 username = username.trim().charAt(0),toUpperCase() + username
 ```
 
-1. Strict equallity
+4. Strict equallity
 
 ```jsx
 = assignment operator
@@ -44,7 +44,7 @@ username = username.trim().charAt(0),toUpperCase() + username
 !== strict inequality operator
 ```
 
-1. Arrays
+5. Arrays
 
 ```jsx
 const fruist = ["apple", "orange", "banana"];
@@ -86,7 +86,7 @@ fruits.sort().reverse();
 
 ```
 
-1. Spread Operator: permite uma string ou um array ser expandido em vários elementos
+6. Spread Operator: permite uma string ou um array ser expandido em vários elementos
 
 ```jsx
 //1.
@@ -109,7 +109,7 @@ let newFruits= [...fruits,...foods, "egg"];
 
 ```
 
-1. Rest Parameters: pega vários elementos e coloca dentro de um mesmo array
+7. Rest Parameters: pega vários elementos e coloca dentro de um mesmo array
 
 ```jsx
 //1. 
@@ -124,7 +124,7 @@ const fooods = getFood(food1, food2, food3);
 // foods é um array formado por todas as foods
 ```
 
-1. For each: método usado para interar um array e aplicar uma função em cada elemento;
+8. For each: método usado para interar um array e aplicar uma função em cada elemento;
 
 ```jsx
   function dislay(element){
@@ -137,7 +137,7 @@ const fooods = getFood(food1, food2, food3);
   
 ```
 
-1. Map: aceita uma função e retorna um novo array onde aplica essa função em cada elemento do array
+9. Map: aceita uma função e retorna um novo array onde aplica essa função em cada elemento do array
 
 ```jsx
 function square(element){
@@ -160,7 +160,7 @@ let evenNumbers= numbers.filter(isEven);
 // array q contem 2 4 6
 ```
 
-1. Reduce: reduz os elementos de um array para um único valor
+10. Reduce: reduz os elementos de um array para um único valor
 
 ```jsx
 //1.
@@ -172,7 +172,7 @@ const total = prices.reduce(sum);
 // total = 105
 ```
 
-1. Function expressions: a função é definida como uma variável dentro de outra função
+11. Function expressions: a função é definida como uma variável dentro de outra função
 
 ```jsx
 //1.
@@ -182,7 +182,7 @@ const cubes = numbers.map (function (element){
 }); 
 ```
 
-1. Arrow functions:
+12. Arrow functions:
 
 ```jsx
 //1.
@@ -190,7 +190,7 @@ const numbers = [1,2,3,4,5]
 const cubes = numbers.filter ((element) => Math.pow(element,3));
 ```
 
-1. Classes:
+13. Classes:
 
 ```jsx
 //1.
@@ -210,7 +210,7 @@ const product1 =  new Product ("Shirt", 19,99)
 product1.displauProduct();
 ```
 
-1. Static: keyword que define classes ou métodos pertencem a classe (não o objeto)
+14. Static: keyword que define classes ou métodos pertencem a classe (não o objeto)
 
 ```jsx
 class User{
@@ -231,7 +231,7 @@ console.log (User.userCount);
 
 ```
 
-1. Classes, super, getters/setters:
+15. Classes, super, getters/setters:
 
 ```jsx
 class Animal {
@@ -267,7 +267,7 @@ class Fish extends Animal {
 }
 ```
 
-1. Destructuring: extrair valores de arrays e objetos
+16. Destructuring: extrair valores de arrays e objetos
 
 ```jsx
 //1. [] para arrays
@@ -310,7 +310,7 @@ const {firstName, lastName, age, job="unemployed"}=person1
 // unemployed é um deafult quase nao ter
 ```
 
-1. Nested objects: objetos dentro de objetos
+17. Nested objects: objetos dentro de objetos
 
 ```jsx
 class Person {
@@ -332,7 +332,7 @@ class Address {
 const person1 = new Person("Othavio", 30, "123", "Cuiaba", "Brasil");
 ```
 
-1. Array of objects:
+18. Array of objects:
 
 ```jsx
 const fruits  = [
@@ -350,7 +350,7 @@ const maxFrui = fruits.reduce ((prev,next)=>
                                 next : prev);
 ```
 
-1. Sort: ordena organizar elementos de um array
+19. Sort: ordena organizar elementos de um array
 
 ```jsx
 //1.
@@ -378,7 +378,7 @@ people.sort((a, b) => a.age - b.age);
 console.log(people);
 ```
 
-1. Dates:
+20. Dates:
 
 ```
 // Date (year, month, day, hour, minute, seconds, ms)
@@ -409,7 +409,7 @@ if(date4 > date5) {
 }
 ```
 
-1. Closures: uma função definida dentro de outra função e tem acesso as variaveis da função definida fora dela. JS frameworks funcionam desse jeito.
+21. Closures: uma função definida dentro de outra função e tem acesso as variaveis da função definida fora dela. JS frameworks funcionam desse jeito.
 
 ```jsx
 function createGame() {
@@ -439,7 +439,7 @@ game.decreaseScore(2);
 console.log (game.getScore());
 ```
 
-1. Element selectors :
+22. Element selectors :
 
 ```jsx
 //1.
@@ -463,7 +463,7 @@ const elements = document.querySelector(".fruits");
 // retorna uma nodelist
 ```
 
-1. DOM navigation:
+23. DOM navigation:
 
 ```jsx
 const element = document.getElementById("element");
@@ -481,7 +481,7 @@ const first = element.parentElement;
 const first = element.children;
 ```
 
-1. Add and change HTML:
+24. Add and change HTML:
 
 ```jsx
 //1.
@@ -500,7 +500,7 @@ document.body.insertBefore(newH1, currenElement);
 document.removeChild(newH1)
 ```
 
-1. Mouse events:
+25. Mouse events:
 
 ```jsx
 // events: click, mouseover, mouseout
@@ -519,7 +519,7 @@ mybox.addEventListener("click", (event)=>{
 });
 ```
 
-1. Key events:
+26. Key events:
 
 ```
 // events: keydown, keyup, keypress
@@ -562,7 +562,7 @@ document.addEventListener("keydown", event => {
 });
 ```
 
-1. Promisses: representa um tarefa que pode ser concluida no futuro, ela pode estar pendind, fulfulled ou rejected;
+27. Promisses: representa um tarefa que pode ser concluida no futuro, ela pode estar pendind, fulfulled ou rejected;
 
 ```jsx
 function walkDog(){
