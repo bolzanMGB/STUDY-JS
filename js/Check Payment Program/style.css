@@ -1,0 +1,26 @@
+#title{
+    display: block;
+    text-align: left;
+    text-align: left;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#btnContainer{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+#submitBtn{
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: hsl(271, 76%, 53%);
+    border-radius: 5px;
+    transition: background-color 0.25s;
+    cursor: pointer;
+}
+
+#submitBtn:active{
+    background-color: hsl(271, 76%, 43%);
+}

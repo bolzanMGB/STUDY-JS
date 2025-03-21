@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form>
+        <h1 id="title">Temperature Conversion</h1> <br>
+
+        <input type="number" id="inputBox" value="0"><br>
+
+        <input type="radio" id="cToF" name="unit">
+        <label for="cToF">C -> F</label><br>
+
+        <input type="radio" id="fToC" name="unit">
+        <label for="fToC">F -> C</label><br>
+
+        <button type="button" onclick="convert( )" id="submitBtn">Submit</button>
+        <p id="result"></p>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
